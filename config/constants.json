@@ -1,0 +1,8 @@
+{
+  "post": {
+    "status": {
+      "draft": "draft",
+      "live": "live"
+    }
+  }
+}

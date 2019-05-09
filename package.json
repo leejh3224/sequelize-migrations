@@ -1,0 +1,21 @@
+{
+  "name": "sequelize-migrations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app/",
+    "migrate": "npx sequelize db:migrate",
+    "model:add": "npx sequelize model:generate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mysql2": "^1.6.5",
+    "sequelize": "^5.8.5",
+    "sequelize-cli": "^5.4.0"
+  }
+}
