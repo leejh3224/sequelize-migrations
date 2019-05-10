@@ -4,7 +4,11 @@
     "password": null,
     "database": "test",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "timezone": "+09:00",
+    "define": {
+      "freezeTableName": true
+    }
   },
   "test": {
     "username": "root",
