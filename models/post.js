@@ -46,10 +46,18 @@ module.exports = (sequelize, DataTypes) => {
       as: 'comments',
       onDelete: 'CASCADE',
     })
+    Post.Tag = Post.belongsToMany(models.Tag, {
+      as: 'PostTags',
+      through: 'PostTag',
+      foreignKey: 'postId',
+    })
   };
   Post.loadScopes = function(models) {
-    Post.addScope('comment', {
-      include: [Post.Comment],
+    Post.addScope('comments', {
+      include: [{
+        association: Post.Comment,
+        required: false,
+      }],
     })
   };
   return Post;
